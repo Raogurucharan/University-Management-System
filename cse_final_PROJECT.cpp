@@ -29,11 +29,9 @@ int main(){
   cout<<("\t\tPress Enter to continue......");
   cout<<("\n\n");
   getchar();
-
-	//Considering the max length of data entered (name) to be 15. 
+ 
 	char data[15]; 
-	int n = 0, option = 0, count_n = 0; 
-	//This is the initial mark alloted to a subject. 
+	int n = 0, option = 0, count_n = 0;  
 	string empty = "00";	 
 	string proctor = ""; 
 	//Name of the file in which DB is stored. 
@@ -92,7 +90,6 @@ int main(){
 		int check = 0; 
 		infile.open("Example.txt",ios::in); 
 		
-		//This loop prints out the data according to the registration number specified. 
 		while (infile >> data){ 
 		if (strcmp(data,regno) == 0){ 
 			cout << "\nRegistration Number: " << data << endl; 
